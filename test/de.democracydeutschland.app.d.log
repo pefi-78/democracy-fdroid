@@ -1,0 +1,1482 @@
+DEBUG: Reading 'config.py'
+DEBUG: Getting git vcs interface for https://github.com/demokratie-live/democracy-client.git
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git rev-parse --show-toplevel
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git submodule foreach --recursive git reset --hard
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git submodule foreach --recursive git clean -dffx
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git -c core.askpass=/bin/true -c core.sshCommand=/bin/false -c url.https://.insteadOf=ssh:// -c url.https://u:p@bitbucket.org/.insteadOf=git@bitbucket.org: -c url.https://u:p@bitbucket.org.insteadOf=git://bitbucket.org -c url.https://u:p@bitbucket.org.insteadOf=https://bitbucket.org -c url.https://u:p@github.com/.insteadOf=git@github.com: -c url.https://u:p@github.com.insteadOf=git://github.com -c url.https://u:p@github.com.insteadOf=https://github.com -c url.https://u:p@gitlab.com/.insteadOf=git@gitlab.com: -c url.https://u:p@gitlab.com.insteadOf=git://gitlab.com -c url.https://u:p@gitlab.com.insteadOf=https://gitlab.com fetch origin
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git -c core.askpass=/bin/true -c core.sshCommand=/bin/false -c url.https://.insteadOf=ssh:// -c url.https://u:p@bitbucket.org/.insteadOf=git@bitbucket.org: -c url.https://u:p@bitbucket.org.insteadOf=git://bitbucket.org -c url.https://u:p@bitbucket.org.insteadOf=https://bitbucket.org -c url.https://u:p@github.com/.insteadOf=git@github.com: -c url.https://u:p@github.com.insteadOf=git://github.com -c url.https://u:p@github.com.insteadOf=https://github.com -c url.https://u:p@gitlab.com/.insteadOf=git@gitlab.com: -c url.https://u:p@gitlab.com.insteadOf=git://gitlab.com -c url.https://u:p@gitlab.com.insteadOf=https://gitlab.com fetch --prune --tags origin
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git remote set-head origin --auto
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git checkout -f HEAD
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git clean -dffx
+DEBUG: Getting git vcs interface for https://github.com/demokratie-live/democracy-client.git
+DEBUG: > git --version
+git version 2.11.0
+INFO: Using git version 2.11.0
+DEBUG: Checking 1.3.3
+INFO: Building version 1.3.3 (103675) of de.democracydeutschland.app
+WARNING: de.democracydeutschland.app:1.3.3 runs this on the buildserver with sudo:
+	curl -Lo node.tar.xz https://nodejs.org/dist/v12.16.3/node-v12.16.3-linux-x64.tar.xz && echo "1956e196e3c3c8ef5f0c45db76d7c1245af4ccdda2b7ab30a57ce91d6e165caa" node.tar.xz | sha256sum -c - && tar xJf node.tar.xz && cp -a node-v12.16.3-linux-x64/. /usr/local/ && npm -g install yarn
+INFO: Getting source for revision a458b6f1af14b4d677fa438883c0aa9ba1759609
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git rev-parse --show-toplevel
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git submodule foreach --recursive git reset --hard
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git submodule foreach --recursive git clean -dffx
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git -c core.askpass=/bin/true -c core.sshCommand=/bin/false -c url.https://.insteadOf=ssh:// -c url.https://u:p@bitbucket.org/.insteadOf=git@bitbucket.org: -c url.https://u:p@bitbucket.org.insteadOf=git://bitbucket.org -c url.https://u:p@bitbucket.org.insteadOf=https://bitbucket.org -c url.https://u:p@github.com/.insteadOf=git@github.com: -c url.https://u:p@github.com.insteadOf=git://github.com -c url.https://u:p@github.com.insteadOf=https://github.com -c url.https://u:p@gitlab.com/.insteadOf=git@gitlab.com: -c url.https://u:p@gitlab.com.insteadOf=git://gitlab.com -c url.https://u:p@gitlab.com.insteadOf=https://gitlab.com fetch origin
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git -c core.askpass=/bin/true -c core.sshCommand=/bin/false -c url.https://.insteadOf=ssh:// -c url.https://u:p@bitbucket.org/.insteadOf=git@bitbucket.org: -c url.https://u:p@bitbucket.org.insteadOf=git://bitbucket.org -c url.https://u:p@bitbucket.org.insteadOf=https://bitbucket.org -c url.https://u:p@github.com/.insteadOf=git@github.com: -c url.https://u:p@github.com.insteadOf=git://github.com -c url.https://u:p@github.com.insteadOf=https://github.com -c url.https://u:p@gitlab.com/.insteadOf=git@gitlab.com: -c url.https://u:p@gitlab.com.insteadOf=git://gitlab.com -c url.https://u:p@gitlab.com.insteadOf=https://gitlab.com fetch --prune --tags origin
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git remote set-head origin --auto
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git checkout -f a458b6f1af14b4d677fa438883c0aa9ba1759609
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > git clean -dffx
+INFO: Running 'init' commands in build/de.democracydeutschland.app/packages/mobile-app/android/
+DEBUG: Directory: build/de.democracydeutschland.app/packages/mobile-app/android
+DEBUG: > bash -x -c -- yarn install
++ yarn install
+yarn install v1.22.4
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info fsevents@1.2.12: The platform "linux" is incompatible with this module.
+info "fsevents@1.2.12" is an optional dependency and failed compatibility check. Excluding it from installation.
+info fsevents@2.1.2: The platform "linux" is incompatible with this module.
+info "fsevents@2.1.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+info fsevents@2.1.3: The platform "linux" is incompatible with this module.
+info "fsevents@2.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+warning " > react-native@0.61.5" has unmet peer dependency "react@16.9.0".
+warning "react-native > metro-react-native-babel-transformer@0.56.4" has unmet peer dependency "@babel/core@*".
+warning " > docz@2.0.0-rc.67" has unmet peer dependency "react@^16.8.0".
+warning " > docz@2.0.0-rc.67" has unmet peer dependency "react-dom@^16.8.0".
+warning "docz > @emotion/core@10.0.28" has unmet peer dependency "react@>=16.3.0".
+warning "docz > @mdx-js/react@1.5.8" has unmet peer dependency "react@^16.9.0".
+warning "docz > gatsby@2.20.22" has unmet peer dependency "react@^16.4.2".
+warning "docz > gatsby@2.20.22" has unmet peer dependency "react-dom@^16.4.2".
+warning "docz > gatsby-plugin-eslint@2.0.8" has unmet peer dependency "eslint@^6.6.0".
+warning "docz > gatsby-plugin-eslint@2.0.8" has unmet peer dependency "eslint-loader@^3.0.2".
+warning "docz > gatsby-theme-docz@2.0.0-rc.67" has unmet peer dependency "react@^16.8.0".
+warning "docz > gatsby-theme-docz@2.0.0-rc.67" has unmet peer dependency "react-dom@^16.8.0".
+warning "docz > gatsby > @reach/router@1.3.3" has unmet peer dependency "react@15.x || 16.x || 16.4.0-alpha.0911da3".
+warning "docz > gatsby > @reach/router@1.3.3" has unmet peer dependency "react-dom@15.x || 16.x || 16.4.0-alpha.0911da3".
+warning "docz > gatsby > gatsby-link@2.3.2" has unmet peer dependency "react@^16.4.2".
+warning "docz > gatsby > gatsby-link@2.3.2" has unmet peer dependency "react-dom@^16.4.2".
+warning "docz > gatsby > gatsby-react-router-scroll@2.2.1" has unmet peer dependency "react@^0.14.0 || ^15.0.0 || ^16.0.0".
+warning "docz > gatsby > gatsby-react-router-scroll@2.2.1" has unmet peer dependency "react-dom@^0.14.0 || ^15.0.0 || ^16.0.0".
+warning "docz > gatsby > react-hot-loader@4.12.20" has unmet peer dependency "@types/react@^15.0.0 || ^16.0.0".
+warning "docz > gatsby > react-hot-loader@4.12.20" has unmet peer dependency "react@^15.0.0 || ^16.0.0".
+warning "docz > gatsby > react-hot-loader@4.12.20" has unmet peer dependency "react-dom@^15.0.0 || ^16.0.0".
+warning "docz > gatsby-theme-docz > @emotion/styled@10.0.27" has unmet peer dependency "react@>=16.3.0".
+warning "docz > gatsby-theme-docz > @loadable/component@5.12.0" has unmet peer dependency "react@>=16.3.0".
+warning "docz > gatsby-theme-docz > emotion-theming@10.0.27" has unmet peer dependency "react@>=16.3.0".
+warning "docz > gatsby-theme-docz > gatsby-plugin-emotion@4.2.1" has unmet peer dependency "@babel/core@^7.0.0".
+warning "docz > gatsby-theme-docz > react-feather@2.0.4" has unmet peer dependency "react@^16.8.6".
+warning "docz > gatsby-theme-docz > react-helmet@5.2.1" has unmet peer dependency "react@>=15.0.0".
+warning "docz > gatsby-theme-docz > theme-ui@0.2.52" has unmet peer dependency "react@^16.8.0".
+warning "docz > gatsby > @reach/router > create-react-context@0.3.0" has unmet peer dependency "react@^0.14.0 || ^15.0.0 || ^16.0.0".
+warning "docz > gatsby-theme-docz > @emotion/styled > @emotion/styled-base@10.0.31" has unmet peer dependency "react@>=16.3.0".
+warning "docz > gatsby-theme-docz > gatsby-plugin-emotion > @emotion/babel-preset-css-prop@10.0.27" has unmet peer dependency "@babel/core@^7.0.0".
+warning "docz > gatsby-theme-docz > react-helmet > react-side-effect@1.2.0" has unmet peer dependency "react@^0.13.0 || ^0.14.0 || ^15.0.0 || ^16.0.0".
+warning "docz > gatsby-theme-docz > react-live > create-react-context@0.2.2" has unmet peer dependency "react@^0.14.0 || ^15.0.0 || ^16.0.0".
+warning "docz > gatsby-theme-docz > react-live > prism-react-renderer@1.0.2" has unmet peer dependency "react@>=0.14.9".
+warning "docz > gatsby-theme-docz > react-live > react-simple-code-editor@0.10.0" has unmet peer dependency "react@^16.0.0".
+warning "docz > gatsby-theme-docz > react-live > react-simple-code-editor@0.10.0" has unmet peer dependency "react-dom@^16.0.0".
+warning "docz > gatsby-theme-docz > rehype-docz > react-ace@7.0.5" has unmet peer dependency "react@^0.13.0 || ^0.14.0 || ^15.0.1 || ^16.0.0".
+warning "docz > gatsby-theme-docz > rehype-docz > react-ace@7.0.5" has unmet peer dependency "react-dom@^0.13.0 || ^0.14.0 || ^15.0.1 || ^16.0.0".
+warning "docz > gatsby-theme-docz > gatsby-plugin-emotion > @emotion/babel-preset-css-prop > @emotion/babel-plugin-jsx-pragmatic@0.1.5" has unmet peer dependency "@babel/core@^7.0.0".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > @apollo/react-hooks@3.1.5" has unmet peer dependency "react-dom@^16.8.0".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > apollo-link-rest@0.7.3" has unmet peer dependency "apollo-link@>=1".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > apollo-link-rest@0.7.3" has unmet peer dependency "qs@>=6".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > react-native-appstate-hook@1.0.4" has incorrect peer dependency "react-native@^0.59.0".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > styled-components@4.4.1" has unmet peer dependency "react-dom@>= 16.3.0".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > @testing-library/react@9.5.0" has unmet peer dependency "react-dom@*".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > @democracy-deutschland/mobile-ui > react-art@16.13.1" has incorrect peer dependency "react@^16.13.1".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > @apollo/react-hooks > @apollo/react-common@3.1.4" has unmet peer dependency "apollo-utilities@^1.3.2".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > @react-native-community/eslint-config > @typescript-eslint/eslint-plugin@1.13.0" has incorrect peer dependency "eslint@^5.0.0".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > @react-native-community/eslint-config > @typescript-eslint/parser@1.13.0" has incorrect peer dependency "eslint@^5.0.0".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > @react-native-community/eslint-config > eslint-plugin-react@7.12.4" has incorrect peer dependency "eslint@^3.0.0 || ^4.0.0 || ^5.0.0".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > app > @react-native-community/eslint-config > eslint-plugin-react-native@3.6.0" has incorrect peer dependency "eslint@^3.17.0 || ^4 || ^5".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > @democracy-deutschland/mobile-ui > @storybook/addon-actions > @storybook/api@5.3.18" has unmet peer dependency "regenerator-runtime@*".
+warning "workspace-aggregator-86702099-894d-42b9-9c6f-34587e1ac7d1 > @democracy-deutschland/mobile-ui > @storybook/addon-ondevice-knobs > @emotion/native > @emotion/primitives-core@10.0.27" has unmet peer dependency "@emotion/core@^10.0.27".
+[4/4] Building fresh packages...
+$ patch-package
+patch-package 6.2.2
+Applying patches...
+@types/detox@14.5.2 ✔
+Done in 222.21s.
+INFO: Applying patches
+INFO: Applying patch-1.3.3.patch
+DEBUG: Directory: build/de.democracydeutschland.app
+DEBUG: > patch -p1 -i /home/pefi/fdroidnewdata/metadata/de.democracydeutschland.app/patch-1.3.3.patch
+patching file packages/mobile-app/android/app/build.gradle
+patching file packages/mobile-app/android/app/src/main/AndroidManifest.xml
+patching file packages/mobile-app/android/app/src/main/java/de/democracydeutschland/app/MainApplication.java
+patching file packages/mobile-app/android/build.gradle
+patching file packages/mobile-app/android/settings.gradle
+patching file packages/mobile-app/ios/Podfile.lock
+patching file packages/mobile-app/package.json
+patching file packages/mobile-app/react-native.config.js
+patching file packages/mobile-app/src/App.tsx
+patching file packages/mobile-app/src/context/NotificationPermission/graphql/mutation/AddToken.ts
+patching file packages/mobile-app/src/context/NotificationPermission/graphql/mutation/UpdateNotificationSettings.ts
+patching file packages/mobile-app/src/context/NotificationPermission/graphql/mutation/__generated__/AddToken.ts
+patching file packages/mobile-app/src/context/NotificationPermission/graphql/mutation/__generated__/UpdateNotificationSettings.ts
+patching file packages/mobile-app/src/context/NotificationPermission/graphql/query/NotificationSettings.ts
+patching file packages/mobile-app/src/context/NotificationPermission/graphql/query/__generated__/NotificationSettings.ts
+patching file packages/mobile-app/src/context/NotificationPermission/index.tsx
+patching file packages/mobile-app/src/context/PushNotification/index.tsx
+patching file packages/mobile-app/src/routes/index.tsx
+patching file packages/mobile-app/src/screens/Bundestag/List/NoConferenceWeekData.tsx
+patching file packages/mobile-app/src/screens/Bundestag/Procedure/PrepareActions.tsx
+patching file packages/mobile-app/src/screens/Bundestag/Procedure/Voting/index.tsx
+patching file packages/mobile-app/src/screens/Bundestag/Procedure/index.tsx
+patching file packages/mobile-app/src/screens/Settings/index.tsx
+patching file packages/mobile-app/src/screens/modals/Introduction/PushInstructions/NotificationBox.tsx
+patching file packages/mobile-app/src/screens/modals/Introduction/PushInstructions/Settings.tsx
+patching file packages/mobile-app/src/screens/modals/Introduction/PushInstructions/data.ts
+patching file packages/mobile-app/src/screens/modals/Introduction/PushInstructions/index.tsx
+patching file packages/mobile-app/src/screens/modals/Introduction/index.tsx
+patching file packages/mobile-app/src/screens/modals/NotificationInstruction/index.tsx
+patching file yarn.lock
+INFO: Creating local.properties file at build/de.democracydeutschland.app/local.properties
+INFO: Creating local.properties file at build/de.democracydeutschland.app/packages/local.properties
+INFO: Creating local.properties file at build/de.democracydeutschland.app/packages/mobile-app/local.properties
+INFO: Creating local.properties file at build/de.democracydeutschland.app/packages/mobile-app/android/local.properties
+INFO: Updating local.properties file at build/de.democracydeutschland.app/packages/mobile-app/android/local.properties
+DEBUG: Removing debuggable flags from build/de.democracydeutschland.app/packages/mobile-app/android/
+INFO: Removing specified files
+INFO: Removing node_modules/clipboardy/fallbacks
+INFO: Removing node_modules/@jest/reporters/node_modules/node-notifier/vendor
+INFO: Removing node_modules/node-notifier/vendor
+INFO: Removing node_modules/term-size/vendor
+INFO: Removing node_modules/react-native-notifications/lib/ios
+INFO: Removing node_modules/@sentry/cli/sentry-cli
+INFO: Removing node_modules/react-native-sha256/.vscode/ipch/439fa8c14c5b3f1a/mmap_address.bin
+INFO: Removing node_modules/react-native/template
+INFO: Removing node_modules/react-native/ReactAndroid/src/main/third-party/java/buck-android-support/buck-android-support.jar
+INFO: Removing node_modules/hermes-engine
+INFO: Removing node_modules/react-native-sha256/example
+INFO: Removing node_modules/update-notifier/node_modules/term-size/vendor
+INFO: Cleaned build.gradle of keysigning configs at build/de.democracydeutschland.app/node_modules/react-native-pdf/example/android/app/build.gradle
+INFO: Cleaned build.gradle of keysigning configs at build/de.democracydeutschland.app/packages/mobile-ui/android/app/build.gradle
+INFO: Cleaned build.gradle of keysigning configs at build/de.democracydeutschland.app/packages/mobile-app/android/app/build.gradle
+INFO: Running 'prebuild' commands in build/de.democracydeutschland.app/packages/mobile-app/android/
+DEBUG: Directory: build/de.democracydeutschland.app/packages/mobile-app/android
+DEBUG: > bash -x -c -- echo -e "GRAPHQL_URL=https://api.democracy-app.de/\nPHONE_NUMBER=+4917647040213\nGITHUB_URL=https://github.com/demokratie-live/democracy-client\nCONTACT_EMAIL=prototyping@democracy-deutschland.de" >> ../.env && sed -i -e '/hasPermission/d' -e '/tokenFetchIntent/d' -e '/GcmInstance/d' ../../../node_modules/react-native-notifications/lib/android/app/src/main/java/com/wix/reactnativenotifications/RNNotificationsModule.java && sed -i -e '/play-services/d' ../../../node_modules/react-native-device-info/android/build.gradle && sed -i -e '/com.google.android.gms.iid.InstanceID.getInstance/d' ../../../node_modules/react-native-device-info/android/src/main/java/com/learnium/RNDeviceInfo/RNDeviceModule.java && sed -i -e '/firebase/d' ../../../node_modules/react-native-notifications/lib/android/app/build.gradle ../../../packages/mobile-app/android/app/build.gradle && sed -i -e '/hasPermission/d' -e '/tokenFetchIntent/d' -e '/GcmInstance/d' ../../../node_modules/react-native-notifications/lib/android/app/src/main/java/com/wix/reactnativenotifications/RNNotificationsModule.java && sed -i -e '/com.google.gms.google-services/d' ../../../packages/mobile-app/android/app/build.gradle && truncate -s 0 ../../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
++ echo -e 'GRAPHQL_URL=https://api.democracy-app.de/\nPHONE_NUMBER=+4917647040213\nGITHUB_URL=https://github.com/demokratie-live/democracy-client\nCONTACT_EMAIL=prototyping@democracy-deutschland.de'
++ sed -i -e /hasPermission/d -e /tokenFetchIntent/d -e /GcmInstance/d ../../../node_modules/react-native-notifications/lib/android/app/src/main/java/com/wix/reactnativenotifications/RNNotificationsModule.java
++ sed -i -e /play-services/d ../../../node_modules/react-native-device-info/android/build.gradle
++ sed -i -e /com.google.android.gms.iid.InstanceID.getInstance/d ../../../node_modules/react-native-device-info/android/src/main/java/com/learnium/RNDeviceInfo/RNDeviceModule.java
++ sed -i -e /firebase/d ../../../node_modules/react-native-notifications/lib/android/app/build.gradle ../../../packages/mobile-app/android/app/build.gradle
++ sed -i -e /hasPermission/d -e /tokenFetchIntent/d -e /GcmInstance/d ../../../node_modules/react-native-notifications/lib/android/app/src/main/java/com/wix/reactnativenotifications/RNNotificationsModule.java
++ sed -i -e /com.google.gms.google-services/d ../../../packages/mobile-app/android/app/build.gradle
++ truncate -s 0 ../../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
+INFO: Cleaning Gradle project...
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native/react.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native/node_modules/@react-native-community/cli-platform-android/native_modules.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native/ReactAndroid/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native/ReactAndroid/release.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-safe-area-context/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/@sentry/react-native/sentry.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/@sentry/react-native/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-pdf/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-pdf/example/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-pdf/example/android/settings.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-pdf/example/android/app/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-splash-screen/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-permissions/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-svg/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/@react-native-community/cli-platform-android/native_modules.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/@react-native-community/masked-view/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/@react-native-community/async-storage/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-screens/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/rn-fetch-blob/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-keychain/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-linear-gradient/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-notifications/lib/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-notifications/lib/android/settings.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-notifications/lib/android/app/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-reanimated/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-config/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-config/android/dotenv.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-device-info/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-sha256/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-gesture-handler/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-gesture-handler/android/lib/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/node_modules/react-native-search-bar/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/packages/mobile-ui/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/packages/mobile-ui/android/settings.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/packages/mobile-ui/android/app/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/packages/mobile-app/node_modules/detox/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/packages/mobile-app/node_modules/detox/android/settings.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/packages/mobile-app/node_modules/detox/android/detox/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/packages/mobile-app/node_modules/detox/android/detox/detox-publishing.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/packages/mobile-app/android/build.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/packages/mobile-app/android/settings.gradle
+DEBUG: Forcing build-tools 26.0.0 in build/de.democracydeutschland.app/packages/mobile-app/android/app/build.gradle
+DEBUG: Directory: build/de.democracydeutschland.app/packages/mobile-app/android
+DEBUG: > gradle clean
+To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/5.5/userguide/gradle_daemon.html.
+Daemon will be stopped at the end of the build stopping after processing
+
+> Configure project :@react-native-community_async-storage
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :@react-native-community_masked-view
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :@sentry_react-native
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :app
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+Reading env from: .env
+
+> Configure project :react-native-config
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-device-info
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+
+> Configure project :react-native-gesture-handler
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+
+> Configure project :react-native-keychain
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-linear-gradient
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-pdf
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-permissions
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-reanimated
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-safe-area-context
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+
+> Configure project :react-native-screens
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-search-bar
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+
+> Configure project :react-native-sha256
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-splash-screen
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-svg
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :rn-fetch-blob
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Task :@react-native-community_async-storage:clean UP-TO-DATE
+> Task :@react-native-community_masked-view:clean UP-TO-DATE
+> Task :@sentry_react-native:clean UP-TO-DATE
+> Task :app:clean UP-TO-DATE
+> Task :react-native-config:clean UP-TO-DATE
+> Task :react-native-device-info:clean UP-TO-DATE
+> Task :react-native-gesture-handler:clean UP-TO-DATE
+> Task :react-native-keychain:clean UP-TO-DATE
+> Task :react-native-linear-gradient:clean UP-TO-DATE
+> Task :react-native-pdf:clean UP-TO-DATE
+> Task :react-native-permissions:clean UP-TO-DATE
+> Task :react-native-reanimated:clean UP-TO-DATE
+> Task :react-native-safe-area-context:clean UP-TO-DATE
+> Task :react-native-screens:clean UP-TO-DATE
+> Task :react-native-search-bar:clean UP-TO-DATE
+> Task :react-native-sha256:clean UP-TO-DATE
+> Task :react-native-splash-screen:clean UP-TO-DATE
+> Task :react-native-svg:clean UP-TO-DATE
+> Task :rn-fetch-blob:clean UP-TO-DATE
+
+BUILD SUCCESSFUL in 43s
+19 actionable tasks: 19 up-to-date
+INFO: Scanning source for common problems...
+WARNING: Found AAR file at node_modules/react-native/android/com/facebook/react/react-native/0.61.5/react-native-0.61.5.aar
+WARNING: Found JAR file at node_modules/react-native/android/com/facebook/react/react-native/0.61.5/react-native-0.61.5-sources.jar
+WARNING: Found JAR file at node_modules/react-native/android/com/facebook/react/react-native/0.61.5/react-native-0.61.5-javadoc.jar
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/react-native/android' at node_modules/react-native-safe-area-context/android/build.gradle
+WARNING: Found possible binary at node_modules/bplist-parser/test/utf16_chinese.plist
+WARNING: Found AAR file at node_modules/jsc-android/dist/org/webkit/android-jsc-intl/r245459/android-jsc-intl-r245459.aar
+WARNING: Found AAR file at node_modules/jsc-android/dist/org/webkit/android-jsc/r245459/android-jsc-r245459.aar
+WARNING: Found AAR file at node_modules/jsc-android/dist/org/webkit/android-jsc-cppruntime/r245459/android-jsc-cppruntime-r245459.aar
+INFO: Ignoring unknown maven repo '(' at node_modules/react-native-pdf/example/android/build.gradle
+INFO: Ignoring unknown maven repo '(' at node_modules/react-native-pdf/example/android/build.gradle
+INFO: Removing gradle-wrapper.jar at node_modules/react-native-pdf/example/android/gradle/wrapper/gradle-wrapper.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/asm-commons-6.0.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/asm-6.0.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/asm-util-6.0.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/jetifier-processor-1.0.0-beta04.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/jdom2-2.0.6.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/jetifier-standalone.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/kotlin-stdlib-common-1.3.0.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/gson-2.8.0.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/commons-cli-1.3.1.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/asm-tree-6.0.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/kotlin-stdlib-1.3.0.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/annotations-13.0.jar
+WARNING: Found JAR file at node_modules/jetifier/lib/jetifier-core-1.0.0-beta04.jar
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/react-native/android' at node_modules/react-native-permissions/android/build.gradle
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/jsc-android/dist' at node_modules/react-native-permissions/android/build.gradle
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/react-native/android' at node_modules/react-native-svg/android/build.gradle
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/react-native/android' at node_modules/@react-native-community/masked-view/android/build.gradle
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/react-native/android' at node_modules/@react-native-community/async-storage/android/build.gradle
+INFO: Ignoring unknown maven repo '$projectDir/../node_modules/react-native/android' at node_modules/react-native-screens/android/build.gradle
+INFO: Removing gradle-wrapper.jar at node_modules/rn-fetch-blob/android/gradle/wrapper/gradle-wrapper.jar
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/react-native/android' at node_modules/react-native-keychain/android/build.gradle
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/jsc-android/dist' at node_modules/react-native-keychain/android/build.gradle
+INFO: Ignoring unknown maven repo '$rootDir/../../node_modules/react-native/android' at node_modules/react-native-notifications/lib/android/build.gradle
+INFO: Removing gradle-wrapper.jar at node_modules/react-native-notifications/lib/android/gradle/wrapper/gradle-wrapper.jar
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/react-native/android' at node_modules/react-native-reanimated/android/build.gradle
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/jsc-android/dist' at node_modules/react-native-reanimated/android/build.gradle
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/EOT/SourceCodePro-Bold.eot
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/EOT/SourceCodePro-Regular.eot
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/WOFF2/OTF/SourceCodePro-Regular.otf.woff2
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/WOFF2/OTF/SourceCodePro-Bold.otf.woff2
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/WOFF2/TTF/SourceCodePro-Regular.ttf.woff2
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/WOFF2/TTF/SourceCodePro-Bold.ttf.woff2
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/OTF/SourceCodePro-Bold.otf
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/OTF/SourceCodePro-Regular.otf
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/TTF/SourceCodePro-Regular.ttf
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/TTF/SourceCodePro-Bold.ttf
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/WOFF/OTF/SourceCodePro-Regular.otf.woff
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/WOFF/OTF/SourceCodePro-Bold.otf.woff
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/WOFF/TTF/SourceCodePro-Bold.ttf.woff
+WARNING: Found possible binary at node_modules/polished/docs/assets/fonts/WOFF/TTF/SourceCodePro-Regular.ttf.woff
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libpixman-1.so.0.38.4
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libharfbuzz.so.0.20600.4
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libglib-2.0.so.0.6400.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libpangocairo-1.0.so.0.4400.7
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libtiff.so.5.5.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libwebpmux.so.3.0.5
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libgio-2.0.so.0.6400.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libffi.so.7.1.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libvips-cpp.so.42.12.1
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libxml2.so.2.9.10
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libcairo.so.2.11600.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libfontconfig.so.1.12.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/liborc-0.4.so.0.31.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libcairo-gobject.so.2.11600.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libwebpdemux.so.2.0.6
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libpng16.so.16.37.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libgobject-2.0.so.0.6400.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libpango-1.0.so.0.4400.7
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libfribidi.so.0.4.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libexif.so.12.3.3
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libwebp.so.7.1.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libexpat.so.1.6.11
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libgsf-1.so.114.0.46
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libgmodule-2.0.so.0.6400.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libvips.so.42.12.1
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libgdk_pixbuf-2.0.so.0.4000.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/liblcms2.so.2.0.8
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libfreetype.so.6.17.1
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libgthread-2.0.so.0.6400.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libpangoft2-1.0.so.0.4400.7
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libgif.so.7.0.0
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libjpeg.so.8.2.2
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/libz.so.1.2.11
+WARNING: Found possible binary at node_modules/sharp/vendor/lib/librsvg-2.so.2.47.0
+WARNING: Found possible binary at node_modules/sharp/build/Release/sharp.node
+INFO: Ignoring usual suspect 'firebase' at line 54 at node_modules/react-native-device-info/android/build.gradle
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/react-native/android' at node_modules/react-native-device-info/android/build.gradle
+INFO: Removing gradle-wrapper.jar at node_modules/react-native-device-info/android/gradle/wrapper/gradle-wrapper.jar
+INFO: Removing gradle-wrapper.jar at node_modules/react-native-sha256/android/gradle/wrapper/gradle-wrapper.jar
+INFO: Ignoring unknown maven repo '(' at packages/mobile-ui/android/build.gradle
+INFO: Ignoring unknown maven repo '(' at packages/mobile-ui/android/build.gradle
+INFO: Removing gradle-wrapper.jar at packages/mobile-ui/android/gradle/wrapper/gradle-wrapper.jar
+WARNING: Found AAR file at packages/mobile-app/node_modules/detox/Detox-android/com/wix/detox/16.4.0/detox-16.4.0.aar
+WARNING: Found JAR file at packages/mobile-app/node_modules/detox/Detox-android/com/wix/detox/16.4.0/detox-16.4.0-sources.jar
+WARNING: Found JAR file at packages/mobile-app/node_modules/detox/Detox-android/com/wix/detox/16.4.0/detox-16.4.0-javadoc.jar
+INFO: Ignoring unknown maven repo '$projectDir/../../node_modules/react-native/android' at packages/mobile-app/node_modules/detox/android/build.gradle
+INFO: Removing gradle-wrapper.jar at packages/mobile-app/node_modules/detox/android/gradle/wrapper/gradle-wrapper.jar
+INFO: Ignoring unknown maven repo '=' at packages/mobile-app/node_modules/detox/android/detox/detox-publishing.gradle
+INFO: Ignoring unknown maven repo '(' at packages/mobile-app/android/build.gradle
+INFO: Ignoring unknown maven repo '(' at packages/mobile-app/android/build.gradle
+INFO: Ignoring unknown maven repo '$rootDir/../node_modules/detox/Detox-android' at packages/mobile-app/android/build.gradle
+INFO: Removing gradle-wrapper.jar at packages/mobile-app/android/gradle/wrapper/gradle-wrapper.jar
+INFO: Creating source tarball...
+INFO: Building Gradle project...
+DEBUG: Directory: build/de.democracydeutschland.app/packages/mobile-app/android
+DEBUG: > gradle assembleMasterRelease
+To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/5.5/userguide/gradle_daemon.html.
+Daemon will be stopped at the end of the build stopping after processing
+
+> Configure project :@react-native-community_async-storage
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :@react-native-community_masked-view
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :@sentry_react-native
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :app
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+Reading env from: .env
+
+> Configure project :react-native-config
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-device-info
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+
+> Configure project :react-native-gesture-handler
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+
+> Configure project :react-native-keychain
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-linear-gradient
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-pdf
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-permissions
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-reanimated
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-safe-area-context
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+
+> Configure project :react-native-screens
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-search-bar
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+
+> Configure project :react-native-sha256
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-splash-screen
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :react-native-svg
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Configure project :rn-fetch-blob
+WARNING: The following project options are deprecated and have been removed: 
+android.useDeprecatedNdk
+NdkCompile is no longer supported
+
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/$ANDROID_NDK.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+WARNING: The specified Android SDK Build Tools version (26.0.0) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.4.2.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '26.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Task :@react-native-community_async-storage:preBuild UP-TO-DATE
+> Task :@react-native-community_async-storage:preReleaseBuild UP-TO-DATE
+> Task :@react-native-community_async-storage:compileReleaseAidl NO-SOURCE
+> Task :@react-native-community_async-storage:checkReleaseManifest
+> Task :@react-native-community_async-storage:compileReleaseRenderscript NO-SOURCE
+> Task :@react-native-community_async-storage:generateReleaseBuildConfig
+> Task :@react-native-community_async-storage:generateReleaseResValues
+> Task :@react-native-community_async-storage:generateReleaseResources
+> Task :@react-native-community_async-storage:packageReleaseResources
+> Task :@react-native-community_async-storage:processReleaseManifest
+> Task :@react-native-community_async-storage:generateReleaseRFile
+> Task :@react-native-community_async-storage:prepareLintJar
+> Task :@react-native-community_async-storage:generateReleaseSources
+> Task :@react-native-community_async-storage:javaPreCompileRelease
+
+> Task :@react-native-community_async-storage:compileReleaseJavaWithJavac
+Note: /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/node_modules/@react-native-community/async-storage/android/src/main/java/com/reactnativecommunity/asyncstorage/AsyncStorageModule.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :@react-native-community_async-storage:bundleLibCompileRelease
+> Task :@react-native-community_masked-view:preBuild UP-TO-DATE
+> Task :@react-native-community_masked-view:preReleaseBuild UP-TO-DATE
+> Task :@react-native-community_masked-view:compileReleaseAidl NO-SOURCE
+> Task :@react-native-community_masked-view:compileReleaseRenderscript NO-SOURCE
+> Task :@react-native-community_masked-view:checkReleaseManifest
+> Task :@react-native-community_masked-view:generateReleaseBuildConfig
+> Task :@react-native-community_masked-view:generateReleaseResValues
+> Task :@react-native-community_masked-view:generateReleaseResources
+> Task :@react-native-community_masked-view:packageReleaseResources
+> Task :@react-native-community_masked-view:processReleaseManifest
+> Task :@react-native-community_masked-view:generateReleaseRFile
+> Task :@react-native-community_masked-view:prepareLintJar
+> Task :@react-native-community_masked-view:generateReleaseSources
+> Task :@react-native-community_masked-view:javaPreCompileRelease
+> Task :@react-native-community_masked-view:compileReleaseJavaWithJavac
+> Task :@react-native-community_masked-view:bundleLibCompileRelease
+> Task :@sentry_react-native:preBuild UP-TO-DATE
+> Task :@sentry_react-native:preReleaseBuild UP-TO-DATE
+> Task :@sentry_react-native:compileReleaseAidl NO-SOURCE
+> Task :@sentry_react-native:checkReleaseManifest
+> Task :@sentry_react-native:compileReleaseRenderscript NO-SOURCE
+> Task :@sentry_react-native:generateReleaseBuildConfig
+> Task :@sentry_react-native:generateReleaseResValues
+> Task :@sentry_react-native:generateReleaseResources
+> Task :@sentry_react-native:packageReleaseResources
+> Task :@sentry_react-native:processReleaseManifest
+> Task :@sentry_react-native:generateReleaseRFile
+> Task :@sentry_react-native:prepareLintJar
+> Task :@sentry_react-native:generateReleaseSources
+> Task :@sentry_react-native:javaPreCompileRelease
+
+> Task :@sentry_react-native:compileReleaseJavaWithJavac
+Note: /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/node_modules/@sentry/react-native/android/src/main/java/io/sentry/RNSentryModule.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :@sentry_react-native:bundleLibCompileRelease
+> Task :app:generatePackageList
+> Task :app:preBuild
+> Task :react-native-config:preBuild UP-TO-DATE
+> Task :react-native-config:preReleaseBuild UP-TO-DATE
+> Task :react-native-config:checkReleaseManifest
+> Task :react-native-config:processReleaseManifest
+> Task :react-native-device-info:preBuild UP-TO-DATE
+> Task :react-native-device-info:preReleaseBuild UP-TO-DATE
+> Task :react-native-device-info:checkReleaseManifest
+> Task :react-native-device-info:processReleaseManifest
+> Task :react-native-gesture-handler:preBuild UP-TO-DATE
+> Task :react-native-gesture-handler:preReleaseBuild UP-TO-DATE
+> Task :react-native-gesture-handler:checkReleaseManifest
+> Task :react-native-gesture-handler:processReleaseManifest
+> Task :react-native-keychain:preBuild UP-TO-DATE
+> Task :react-native-keychain:preReleaseBuild UP-TO-DATE
+> Task :react-native-keychain:checkReleaseManifest
+> Task :react-native-keychain:processReleaseManifest
+> Task :react-native-linear-gradient:preBuild UP-TO-DATE
+> Task :react-native-linear-gradient:preReleaseBuild UP-TO-DATE
+> Task :react-native-linear-gradient:checkReleaseManifest
+> Task :react-native-linear-gradient:processReleaseManifest
+> Task :react-native-pdf:preBuild UP-TO-DATE
+> Task :react-native-pdf:preReleaseBuild UP-TO-DATE
+> Task :react-native-pdf:checkReleaseManifest
+> Task :react-native-pdf:processReleaseManifest
+> Task :react-native-permissions:preBuild UP-TO-DATE
+> Task :react-native-permissions:preReleaseBuild UP-TO-DATE
+> Task :react-native-permissions:checkReleaseManifest
+> Task :react-native-permissions:processReleaseManifest
+> Task :react-native-reanimated:preBuild UP-TO-DATE
+> Task :react-native-reanimated:preReleaseBuild UP-TO-DATE
+> Task :react-native-reanimated:checkReleaseManifest
+> Task :react-native-reanimated:processReleaseManifest
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:preReleaseBuild UP-TO-DATE
+> Task :react-native-safe-area-context:checkReleaseManifest
+> Task :react-native-safe-area-context:processReleaseManifest
+> Task :react-native-screens:preBuild UP-TO-DATE
+> Task :react-native-screens:preReleaseBuild UP-TO-DATE
+> Task :react-native-screens:checkReleaseManifest
+> Task :react-native-screens:processReleaseManifest
+> Task :react-native-search-bar:preBuild UP-TO-DATE
+> Task :react-native-search-bar:preReleaseBuild UP-TO-DATE
+> Task :react-native-search-bar:checkReleaseManifest
+> Task :react-native-search-bar:processReleaseManifest
+> Task :react-native-sha256:preBuild UP-TO-DATE
+> Task :react-native-sha256:preReleaseBuild UP-TO-DATE
+> Task :react-native-sha256:checkReleaseManifest
+> Task :react-native-sha256:processReleaseManifest
+> Task :react-native-splash-screen:preBuild UP-TO-DATE
+> Task :react-native-splash-screen:preReleaseBuild UP-TO-DATE
+> Task :react-native-splash-screen:checkReleaseManifest
+> Task :react-native-splash-screen:processReleaseManifest
+> Task :react-native-svg:preBuild UP-TO-DATE
+> Task :react-native-svg:preReleaseBuild UP-TO-DATE
+> Task :react-native-svg:checkReleaseManifest
+> Task :react-native-svg:processReleaseManifest
+> Task :rn-fetch-blob:preBuild UP-TO-DATE
+> Task :rn-fetch-blob:preReleaseBuild UP-TO-DATE
+> Task :rn-fetch-blob:checkReleaseManifest
+> Task :rn-fetch-blob:processReleaseManifest
+> Task :app:preMasterReleaseBuild
+> Task :react-native-config:compileReleaseAidl NO-SOURCE
+> Task :react-native-device-info:compileReleaseAidl NO-SOURCE
+> Task :react-native-gesture-handler:compileReleaseAidl NO-SOURCE
+> Task :react-native-keychain:compileReleaseAidl NO-SOURCE
+> Task :react-native-linear-gradient:compileReleaseAidl NO-SOURCE
+> Task :react-native-pdf:compileReleaseAidl NO-SOURCE
+> Task :react-native-permissions:compileReleaseAidl NO-SOURCE
+> Task :react-native-safe-area-context:compileReleaseAidl NO-SOURCE
+> Task :react-native-reanimated:compileReleaseAidl NO-SOURCE
+> Task :react-native-screens:compileReleaseAidl NO-SOURCE
+> Task :react-native-search-bar:compileReleaseAidl NO-SOURCE
+> Task :react-native-sha256:compileReleaseAidl NO-SOURCE
+> Task :react-native-splash-screen:compileReleaseAidl NO-SOURCE
+> Task :react-native-svg:compileReleaseAidl NO-SOURCE
+> Task :rn-fetch-blob:compileReleaseAidl NO-SOURCE
+> Task :app:compileMasterReleaseAidl NO-SOURCE
+> Task :@react-native-community_async-storage:packageReleaseRenderscript NO-SOURCE
+> Task :@react-native-community_masked-view:packageReleaseRenderscript NO-SOURCE
+> Task :@sentry_react-native:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-config:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-device-info:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-gesture-handler:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-keychain:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-linear-gradient:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-pdf:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-permissions:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-reanimated:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-safe-area-context:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-screens:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-search-bar:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-sha256:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-splash-screen:packageReleaseRenderscript NO-SOURCE
+> Task :react-native-svg:packageReleaseRenderscript NO-SOURCE
+> Task :rn-fetch-blob:packageReleaseRenderscript NO-SOURCE
+> Task :app:compileMasterReleaseRenderscript NO-SOURCE
+> Task :app:checkMasterReleaseManifest
+> Task :app:generateMasterReleaseBuildConfig
+> Task :app:bundleMasterReleaseJsAndAssets
+warning: the transform cache was reset.
+Loading dependency graph, done.
+info Writing bundle output to:, /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/app/build/generated/assets/react/master/release/index.android.bundle
+info Writing sourcemap output to:, /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/app/build/generated/sourcemaps/react/master/release/index.android.bundle.map
+info Done writing bundle output
+info Done writing sourcemap output
+info Copying 69 asset files
+info Done copying assets
+
+> Task :app:prepareLintJar
+> Task :app:generateMasterReleaseSources
+> Task :react-native-config:generateReleaseBuildConfig
+> Task :react-native-config:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-config:generateReleaseResValues
+> Task :react-native-config:generateReleaseResources
+> Task :react-native-config:packageReleaseResources
+> Task :react-native-config:generateReleaseRFile
+> Task :react-native-config:prepareLintJar
+> Task :react-native-config:generateReleaseSources
+> Task :react-native-config:javaPreCompileRelease
+> Task :react-native-config:compileReleaseJavaWithJavac
+> Task :react-native-config:bundleLibCompileRelease
+> Task :react-native-device-info:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-device-info:generateReleaseBuildConfig
+> Task :react-native-device-info:generateReleaseResValues
+> Task :react-native-device-info:generateReleaseResources
+> Task :react-native-device-info:packageReleaseResources
+> Task :react-native-device-info:generateReleaseRFile
+> Task :react-native-device-info:prepareLintJar
+> Task :react-native-device-info:generateReleaseSources
+> Task :react-native-device-info:javaPreCompileRelease
+
+> Task :react-native-device-info:compileReleaseJavaWithJavac
+Note: /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/node_modules/react-native-device-info/android/src/main/java/com/learnium/RNDeviceInfo/RNDeviceModule.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :react-native-device-info:bundleLibCompileRelease
+> Task :react-native-gesture-handler:generateReleaseBuildConfig
+> Task :react-native-gesture-handler:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-gesture-handler:generateReleaseResValues
+> Task :react-native-gesture-handler:generateReleaseResources
+> Task :react-native-gesture-handler:packageReleaseResources
+> Task :react-native-gesture-handler:generateReleaseRFile
+> Task :react-native-gesture-handler:prepareLintJar
+> Task :react-native-gesture-handler:generateReleaseSources
+> Task :react-native-gesture-handler:javaPreCompileRelease
+
+> Task :react-native-gesture-handler:compileReleaseJavaWithJavac
+Note: /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :react-native-gesture-handler:bundleLibCompileRelease
+> Task :react-native-keychain:generateReleaseBuildConfig
+> Task :react-native-keychain:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-keychain:generateReleaseResValues
+> Task :react-native-keychain:generateReleaseResources
+> Task :react-native-keychain:packageReleaseResources
+> Task :react-native-keychain:generateReleaseRFile
+> Task :react-native-keychain:prepareLintJar
+> Task :react-native-keychain:generateReleaseSources
+> Task :react-native-keychain:javaPreCompileRelease
+
+> Task :react-native-keychain:compileReleaseJavaWithJavac
+Note: /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/node_modules/react-native-keychain/android/src/main/java/com/oblador/keychain/DeviceAvailability.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :react-native-keychain:bundleLibCompileRelease
+> Task :react-native-linear-gradient:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-linear-gradient:generateReleaseBuildConfig
+> Task :react-native-linear-gradient:generateReleaseResValues
+> Task :react-native-linear-gradient:generateReleaseResources
+> Task :react-native-linear-gradient:packageReleaseResources
+> Task :react-native-linear-gradient:generateReleaseRFile
+> Task :react-native-linear-gradient:prepareLintJar
+> Task :react-native-linear-gradient:generateReleaseSources
+> Task :react-native-linear-gradient:javaPreCompileRelease
+> Task :react-native-linear-gradient:compileReleaseJavaWithJavac
+> Task :react-native-linear-gradient:bundleLibCompileRelease
+> Task :react-native-pdf:generateReleaseBuildConfig
+> Task :react-native-pdf:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-pdf:generateReleaseResValues
+> Task :react-native-pdf:generateReleaseResources
+> Task :react-native-pdf:packageReleaseResources
+> Task :react-native-pdf:generateReleaseRFile
+> Task :react-native-pdf:prepareLintJar
+> Task :react-native-pdf:generateReleaseSources
+> Task :react-native-pdf:javaPreCompileRelease
+> Task :react-native-pdf:compileReleaseJavaWithJavac
+> Task :react-native-pdf:bundleLibCompileRelease
+> Task :react-native-permissions:generateReleaseBuildConfig
+> Task :react-native-permissions:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-permissions:generateReleaseResValues
+> Task :react-native-permissions:generateReleaseResources
+> Task :react-native-permissions:packageReleaseResources
+> Task :react-native-permissions:generateReleaseRFile
+> Task :react-native-permissions:prepareLintJar
+> Task :react-native-permissions:generateReleaseSources
+> Task :react-native-permissions:javaPreCompileRelease
+> Task :react-native-permissions:compileReleaseJavaWithJavac
+> Task :react-native-permissions:bundleLibCompileRelease
+> Task :react-native-reanimated:generateReleaseBuildConfig
+> Task :react-native-reanimated:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-reanimated:generateReleaseResValues
+> Task :react-native-reanimated:generateReleaseResources
+> Task :react-native-reanimated:packageReleaseResources
+> Task :react-native-reanimated:generateReleaseRFile
+> Task :react-native-reanimated:prepareLintJar
+> Task :react-native-reanimated:generateReleaseSources
+> Task :react-native-reanimated:javaPreCompileRelease
+
+> Task :react-native-reanimated:compileReleaseJavaWithJavac
+Note: /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NodesManager.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NodesManager.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :react-native-reanimated:bundleLibCompileRelease
+> Task :react-native-safe-area-context:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-safe-area-context:generateReleaseBuildConfig
+> Task :react-native-safe-area-context:generateReleaseResValues
+> Task :react-native-safe-area-context:generateReleaseResources
+> Task :react-native-safe-area-context:packageReleaseResources
+> Task :react-native-safe-area-context:generateReleaseRFile
+> Task :react-native-safe-area-context:prepareLintJar
+> Task :react-native-safe-area-context:generateReleaseSources
+> Task :react-native-safe-area-context:javaPreCompileRelease
+> Task :react-native-safe-area-context:compileReleaseJavaWithJavac
+> Task :react-native-safe-area-context:bundleLibCompileRelease
+> Task :react-native-screens:generateReleaseBuildConfig
+> Task :react-native-screens:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-screens:generateReleaseResValues
+> Task :react-native-screens:generateReleaseResources
+> Task :react-native-screens:packageReleaseResources
+> Task :react-native-screens:generateReleaseRFile
+> Task :react-native-screens:prepareLintJar
+> Task :react-native-screens:generateReleaseSources
+> Task :react-native-screens:javaPreCompileRelease
+
+> Task :react-native-screens:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :react-native-screens:bundleLibCompileRelease
+> Task :react-native-search-bar:generateReleaseBuildConfig
+> Task :react-native-search-bar:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-search-bar:generateReleaseResValues
+> Task :react-native-search-bar:generateReleaseResources
+> Task :react-native-search-bar:packageReleaseResources
+> Task :react-native-search-bar:generateReleaseRFile
+> Task :react-native-search-bar:prepareLintJar
+> Task :react-native-search-bar:generateReleaseSources
+> Task :react-native-search-bar:javaPreCompileRelease
+> Task :react-native-search-bar:compileReleaseJavaWithJavac
+> Task :react-native-search-bar:bundleLibCompileRelease
+> Task :react-native-sha256:generateReleaseBuildConfig
+> Task :react-native-sha256:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-sha256:generateReleaseResValues
+> Task :react-native-sha256:generateReleaseResources
+> Task :react-native-sha256:packageReleaseResources
+> Task :react-native-sha256:generateReleaseRFile
+> Task :react-native-sha256:prepareLintJar
+> Task :react-native-sha256:generateReleaseSources
+> Task :react-native-sha256:javaPreCompileRelease
+> Task :react-native-sha256:compileReleaseJavaWithJavac
+> Task :react-native-sha256:bundleLibCompileRelease
+> Task :react-native-splash-screen:generateReleaseBuildConfig
+> Task :react-native-splash-screen:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-splash-screen:generateReleaseResValues
+> Task :react-native-splash-screen:generateReleaseResources
+> Task :react-native-splash-screen:packageReleaseResources
+> Task :react-native-splash-screen:generateReleaseRFile
+> Task :react-native-splash-screen:prepareLintJar
+> Task :react-native-splash-screen:generateReleaseSources
+> Task :react-native-splash-screen:javaPreCompileRelease
+> Task :react-native-splash-screen:compileReleaseJavaWithJavac
+> Task :react-native-splash-screen:bundleLibCompileRelease
+> Task :react-native-svg:generateReleaseBuildConfig
+> Task :react-native-svg:compileReleaseRenderscript NO-SOURCE
+> Task :react-native-svg:generateReleaseResValues
+> Task :react-native-svg:generateReleaseResources
+> Task :react-native-svg:packageReleaseResources
+> Task :react-native-svg:generateReleaseRFile
+> Task :react-native-svg:prepareLintJar
+> Task :react-native-svg:generateReleaseSources
+> Task :react-native-svg:javaPreCompileRelease
+> Task :react-native-svg:compileReleaseJavaWithJavac
+> Task :react-native-svg:bundleLibCompileRelease
+> Task :rn-fetch-blob:generateReleaseBuildConfig
+> Task :rn-fetch-blob:compileReleaseRenderscript NO-SOURCE
+> Task :rn-fetch-blob:generateReleaseResValues
+> Task :rn-fetch-blob:generateReleaseResources
+> Task :rn-fetch-blob:packageReleaseResources
+> Task :rn-fetch-blob:generateReleaseRFile
+> Task :rn-fetch-blob:prepareLintJar
+> Task :rn-fetch-blob:generateReleaseSources
+> Task :rn-fetch-blob:javaPreCompileRelease
+
+> Task :rn-fetch-blob:compileReleaseJavaWithJavac
+Note: /home/pefi/fdroidnewdata/build/de.democracydeutschland.app/node_modules/rn-fetch-blob/android/src/main/java/com/RNFetchBlob/RNFetchBlobUtils.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :rn-fetch-blob:bundleLibCompileRelease
+> Task :app:javaPreCompileMasterRelease
+> Task :app:mainApkListPersistenceMasterRelease
+> Task :app:generateMasterReleaseResValues
+> Task :app:generateMasterReleaseResources
+> Task :app:mergeMasterReleaseResources
+> Task :app:createMasterReleaseCompatibleScreenManifests
+
+> Task :app:processMasterReleaseManifest
+/home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/app/src/main/AndroidManifest.xml:6:3-7:61 Warning:
+	uses-permission#android.permission.SYSTEM_ALERT_WINDOW was tagged at AndroidManifest.xml:6 to remove other declarations but no other declaration present
+/home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/app/src/main/AndroidManifest.xml:8:3-9:58 Warning:
+	uses-permission#android.permission.READ_PHONE_STATE was tagged at AndroidManifest.xml:8 to remove other declarations but no other declaration present
+/home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/app/src/main/AndroidManifest.xml:12:3-13:63 Warning:
+	uses-permission#android.permission.READ_EXTERNAL_STORAGE was tagged at AndroidManifest.xml:12 to remove other declarations but no other declaration present
+/home/pefi/fdroidnewdata/build/de.democracydeutschland.app/packages/mobile-app/android/app/src/main/AndroidManifest.xml:14:3-15:52 Warning:
+	uses-permission#android.vending.CHECK_LICENSE was tagged at AndroidManifest.xml:14 to remove other declarations but no other declaration present
+
+> Task :app:processMasterReleaseResources
+> Task :app:compileMasterReleaseJavaWithJavac
+> Task :app:compileMasterReleaseSources
+> Task :@react-native-community_async-storage:prepareLintJarForPublish
+> Task :@react-native-community_masked-view:prepareLintJarForPublish
+> Task :@sentry_react-native:prepareLintJarForPublish
+> Task :react-native-config:prepareLintJarForPublish
+> Task :react-native-device-info:prepareLintJarForPublish
+> Task :react-native-gesture-handler:prepareLintJarForPublish
+> Task :react-native-keychain:prepareLintJarForPublish
+> Task :react-native-linear-gradient:prepareLintJarForPublish
+> Task :react-native-pdf:prepareLintJarForPublish
+> Task :react-native-permissions:prepareLintJarForPublish
+> Task :react-native-reanimated:prepareLintJarForPublish
+> Task :react-native-safe-area-context:prepareLintJarForPublish
+> Task :react-native-screens:prepareLintJarForPublish
+> Task :react-native-search-bar:prepareLintJarForPublish
+> Task :react-native-sha256:prepareLintJarForPublish
+> Task :react-native-splash-screen:prepareLintJarForPublish
+> Task :react-native-svg:prepareLintJarForPublish
+> Task :rn-fetch-blob:prepareLintJarForPublish
+> Task :app:lintVitalMasterRelease
+> Task :@react-native-community_async-storage:mergeReleaseShaders
+> Task :@react-native-community_async-storage:compileReleaseShaders
+> Task :@react-native-community_async-storage:generateReleaseAssets
+> Task :@react-native-community_async-storage:packageReleaseAssets
+> Task :@react-native-community_masked-view:mergeReleaseShaders
+> Task :@react-native-community_masked-view:compileReleaseShaders
+> Task :@react-native-community_masked-view:generateReleaseAssets
+> Task :@react-native-community_masked-view:packageReleaseAssets
+> Task :@sentry_react-native:mergeReleaseShaders
+> Task :@sentry_react-native:compileReleaseShaders
+> Task :@sentry_react-native:generateReleaseAssets
+> Task :@sentry_react-native:packageReleaseAssets
+> Task :app:mergeMasterReleaseShaders
+> Task :app:compileMasterReleaseShaders
+> Task :app:generateMasterReleaseAssets
+> Task :react-native-config:mergeReleaseShaders
+> Task :react-native-config:compileReleaseShaders
+> Task :react-native-config:generateReleaseAssets
+> Task :react-native-config:packageReleaseAssets
+> Task :react-native-device-info:mergeReleaseShaders
+> Task :react-native-device-info:compileReleaseShaders
+> Task :react-native-device-info:generateReleaseAssets
+> Task :react-native-device-info:packageReleaseAssets
+> Task :react-native-gesture-handler:mergeReleaseShaders
+> Task :react-native-gesture-handler:compileReleaseShaders
+> Task :react-native-gesture-handler:generateReleaseAssets
+> Task :react-native-gesture-handler:packageReleaseAssets
+> Task :react-native-keychain:mergeReleaseShaders
+> Task :react-native-keychain:compileReleaseShaders
+> Task :react-native-keychain:generateReleaseAssets
+> Task :react-native-keychain:packageReleaseAssets
+> Task :react-native-linear-gradient:mergeReleaseShaders
+> Task :react-native-linear-gradient:compileReleaseShaders
+> Task :react-native-linear-gradient:generateReleaseAssets
+> Task :react-native-linear-gradient:packageReleaseAssets
+> Task :react-native-pdf:mergeReleaseShaders
+> Task :react-native-pdf:compileReleaseShaders
+> Task :react-native-pdf:generateReleaseAssets
+> Task :react-native-pdf:packageReleaseAssets
+> Task :react-native-permissions:mergeReleaseShaders
+> Task :react-native-permissions:compileReleaseShaders
+> Task :react-native-permissions:generateReleaseAssets
+> Task :react-native-permissions:packageReleaseAssets
+> Task :react-native-reanimated:mergeReleaseShaders
+> Task :react-native-reanimated:compileReleaseShaders
+> Task :react-native-reanimated:generateReleaseAssets
+> Task :react-native-reanimated:packageReleaseAssets
+> Task :react-native-safe-area-context:mergeReleaseShaders
+> Task :react-native-safe-area-context:compileReleaseShaders
+> Task :react-native-safe-area-context:generateReleaseAssets
+> Task :react-native-safe-area-context:packageReleaseAssets
+> Task :react-native-screens:mergeReleaseShaders
+> Task :react-native-screens:compileReleaseShaders
+> Task :react-native-screens:generateReleaseAssets
+> Task :react-native-screens:packageReleaseAssets
+> Task :react-native-search-bar:mergeReleaseShaders
+> Task :react-native-search-bar:compileReleaseShaders
+> Task :react-native-search-bar:generateReleaseAssets
+> Task :react-native-search-bar:packageReleaseAssets
+> Task :react-native-sha256:mergeReleaseShaders
+> Task :react-native-sha256:compileReleaseShaders
+> Task :react-native-sha256:generateReleaseAssets
+> Task :react-native-sha256:packageReleaseAssets
+> Task :react-native-splash-screen:mergeReleaseShaders
+> Task :react-native-splash-screen:compileReleaseShaders
+> Task :react-native-splash-screen:generateReleaseAssets
+> Task :react-native-splash-screen:packageReleaseAssets
+> Task :react-native-svg:mergeReleaseShaders
+> Task :react-native-svg:compileReleaseShaders
+> Task :react-native-svg:generateReleaseAssets
+> Task :react-native-svg:packageReleaseAssets
+> Task :rn-fetch-blob:mergeReleaseShaders
+> Task :rn-fetch-blob:compileReleaseShaders
+> Task :rn-fetch-blob:generateReleaseAssets
+> Task :rn-fetch-blob:packageReleaseAssets
+> Task :app:mergeMasterReleaseAssets
+> Task :app:copyMasterReleaseBundledJs
+> Task :app:signingConfigWriterMasterRelease
+> Task :@react-native-community_async-storage:bundleLibRuntimeRelease
+> Task :app:checkMasterReleaseDuplicateClasses
+> Task :@react-native-community_masked-view:bundleLibRuntimeRelease
+> Task :@sentry_react-native:bundleLibRuntimeRelease
+> Task :react-native-config:bundleLibRuntimeRelease
+> Task :react-native-device-info:bundleLibRuntimeRelease
+> Task :react-native-gesture-handler:bundleLibRuntimeRelease
+> Task :react-native-keychain:bundleLibRuntimeRelease
+> Task :react-native-linear-gradient:bundleLibRuntimeRelease
+> Task :react-native-pdf:bundleLibRuntimeRelease
+> Task :react-native-permissions:bundleLibRuntimeRelease
+> Task :react-native-reanimated:bundleLibRuntimeRelease
+> Task :react-native-safe-area-context:bundleLibRuntimeRelease
+> Task :react-native-screens:bundleLibRuntimeRelease
+> Task :react-native-search-bar:bundleLibRuntimeRelease
+> Task :react-native-sha256:bundleLibRuntimeRelease
+> Task :react-native-splash-screen:bundleLibRuntimeRelease
+> Task :react-native-svg:bundleLibRuntimeRelease
+> Task :rn-fetch-blob:bundleLibRuntimeRelease
+> Task :app:transformClassesWithDexBuilderForMasterRelease
+
+/home/pefi/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.12.1/dc6d02e4e68514eff5631963e28ca7742ac69efe/okhttp-3.12.1.jar: D8: Type `org.conscrypt.Conscrypt` was not found, it is required for default or static interface methods desugaring of `java.security.Provider okhttp3.internal.platform.ConscryptPlatform.getProvider()`
+
+> Task :app:transformClassesWithMultidexlistForMasterRelease
+> Task :app:transformDexArchiveWithDexMergerForMasterRelease
+> Task :@react-native-community_async-storage:processReleaseJavaRes NO-SOURCE
+> Task :@react-native-community_async-storage:bundleLibResRelease
+> Task :@react-native-community_async-storage:mergeReleaseJniLibFolders
+> Task :@react-native-community_async-storage:transformNativeLibsWithMergeJniLibsForRelease
+> Task :@react-native-community_async-storage:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :@react-native-community_masked-view:processReleaseJavaRes NO-SOURCE
+> Task :@react-native-community_masked-view:bundleLibResRelease
+> Task :@react-native-community_masked-view:mergeReleaseJniLibFolders
+> Task :@react-native-community_masked-view:transformNativeLibsWithMergeJniLibsForRelease
+> Task :@react-native-community_masked-view:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :@sentry_react-native:processReleaseJavaRes NO-SOURCE
+> Task :@sentry_react-native:bundleLibResRelease
+> Task :@sentry_react-native:mergeReleaseJniLibFolders
+> Task :@sentry_react-native:transformNativeLibsWithMergeJniLibsForRelease
+> Task :@sentry_react-native:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :app:mergeMasterReleaseJniLibFolders
+> Task :react-native-config:processReleaseJavaRes NO-SOURCE
+> Task :react-native-config:bundleLibResRelease
+> Task :react-native-config:mergeReleaseJniLibFolders
+> Task :react-native-config:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-config:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-device-info:processReleaseJavaRes NO-SOURCE
+> Task :react-native-device-info:bundleLibResRelease
+> Task :react-native-device-info:mergeReleaseJniLibFolders
+> Task :react-native-device-info:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-device-info:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-gesture-handler:processReleaseJavaRes NO-SOURCE
+> Task :react-native-gesture-handler:bundleLibResRelease
+> Task :react-native-gesture-handler:mergeReleaseJniLibFolders
+> Task :react-native-gesture-handler:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-gesture-handler:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-keychain:processReleaseJavaRes NO-SOURCE
+> Task :react-native-keychain:bundleLibResRelease
+> Task :react-native-keychain:mergeReleaseJniLibFolders
+> Task :react-native-keychain:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-keychain:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-linear-gradient:processReleaseJavaRes NO-SOURCE
+> Task :react-native-linear-gradient:bundleLibResRelease
+> Task :react-native-linear-gradient:mergeReleaseJniLibFolders
+> Task :react-native-linear-gradient:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-linear-gradient:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-pdf:processReleaseJavaRes NO-SOURCE
+> Task :react-native-pdf:bundleLibResRelease
+> Task :react-native-pdf:mergeReleaseJniLibFolders
+> Task :react-native-pdf:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-pdf:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-permissions:processReleaseJavaRes NO-SOURCE
+> Task :react-native-permissions:bundleLibResRelease
+> Task :react-native-permissions:mergeReleaseJniLibFolders
+> Task :react-native-permissions:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-permissions:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-reanimated:processReleaseJavaRes NO-SOURCE
+> Task :react-native-reanimated:bundleLibResRelease
+> Task :react-native-reanimated:mergeReleaseJniLibFolders
+> Task :react-native-reanimated:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-reanimated:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-safe-area-context:processReleaseJavaRes NO-SOURCE
+> Task :react-native-safe-area-context:bundleLibResRelease
+> Task :react-native-safe-area-context:mergeReleaseJniLibFolders
+> Task :react-native-safe-area-context:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-safe-area-context:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-screens:processReleaseJavaRes NO-SOURCE
+> Task :react-native-screens:bundleLibResRelease
+> Task :react-native-screens:mergeReleaseJniLibFolders
+> Task :react-native-screens:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-screens:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-search-bar:processReleaseJavaRes NO-SOURCE
+> Task :react-native-search-bar:bundleLibResRelease
+> Task :react-native-search-bar:mergeReleaseJniLibFolders
+> Task :react-native-search-bar:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-search-bar:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-sha256:processReleaseJavaRes NO-SOURCE
+> Task :react-native-sha256:bundleLibResRelease
+> Task :react-native-sha256:mergeReleaseJniLibFolders
+> Task :react-native-sha256:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-sha256:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-splash-screen:processReleaseJavaRes NO-SOURCE
+> Task :react-native-splash-screen:bundleLibResRelease
+> Task :react-native-splash-screen:mergeReleaseJniLibFolders
+> Task :react-native-splash-screen:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-splash-screen:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :react-native-svg:processReleaseJavaRes NO-SOURCE
+> Task :react-native-svg:bundleLibResRelease
+> Task :react-native-svg:mergeReleaseJniLibFolders
+> Task :react-native-svg:transformNativeLibsWithMergeJniLibsForRelease
+> Task :react-native-svg:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :rn-fetch-blob:processReleaseJavaRes NO-SOURCE
+> Task :rn-fetch-blob:bundleLibResRelease
+> Task :rn-fetch-blob:mergeReleaseJniLibFolders
+> Task :rn-fetch-blob:transformNativeLibsWithMergeJniLibsForRelease
+> Task :rn-fetch-blob:transformNativeLibsWithIntermediateJniLibsForRelease
+> Task :app:transformNativeLibsWithMergeJniLibsForMasterRelease
+> Task :app:processMasterReleaseJavaRes NO-SOURCE
+> Task :app:transformResourcesWithMergeJavaResForMasterRelease
+> Task :app:packageMasterRelease
+> Task :app:assembleMasterRelease
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.5/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 14m 26s
+370 actionable tasks: 370 executed
+INFO: Successfully built version 1.3.3 of de.democracydeutschland.app
+DEBUG: Using androguard from "/home/pefi/fdroidserver/lib/python3.5/site-packages/androguard/__init__.py"
+DEBUG: Checking build/de.democracydeutschland.app/packages/mobile-app/android/app/build/outputs/apk/master/release/app-master-release-unsigned.apk
+INFO: success: de.democracydeutschland.app
+INFO: Finished
+INFO: 1 build succeeded
