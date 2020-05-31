@@ -83,8 +83,7 @@ Builds:
       - node_modules/react-native-svg/android/build.gradle
       - node_modules/hermes-engine
       - node_modules/react-native-svg/android/build.gradle
-      #- node_modules/react-native/android
- 
+      - node_modules/react-native/android
     scandelete:
       - node_modules/
 
@@ -126,7 +125,6 @@ Builds:
       - sed -i -e '/play-services/d' ../../../node_modules/react-native-device-info/android/build.gradle
       - sed -i -e '/com.google.android.gms.iid.InstanceID.getInstance/d' ../../../node_modules/react-native-device-info/android/src/main/java/com/learnium/RNDeviceInfo/RNDeviceModule.java
       - sed -i -e '/firebase/d' ../../../node_modules/react-native-notifications/lib/android/app/build.gradle ../../../packages/mobile-app/android/app/build.gradle
-#      - sed -i -e '/hasPermission/d' -e '/tokenFetchIntent/d' -e '/FcmInstance/d' -e '/FirebaseApp/'d ../../../node_modules/react-native-notifications/lib/android/app/src/main/java/com/wix/reactnativenotifications/RNNotificationsModule.java ../../../node_modules/react-native-notifications/lib/android/app/src/main/java/com/wix/reactnativenotifications/RNNotificationsPackage.java
       - sed -i -e '/hasPermission/d' -e '/tokenFetchIntent/d' -e '/GcmInstance/d'
         ../../../node_modules/react-native-notifications/lib/android/app/src/main/java/com/wix/reactnativenotifications/RNNotificationsModule.java
       - sed -i -e '/com.google.gms.google-services/d' ../../../packages/mobile-app/android/app/build.gradle
@@ -149,9 +147,6 @@ Builds:
       - packages/mobile-app/node_modules/detox/android/detox/detox-publishing.gradle
       - packages/mobile-app/android/build.gradle
       - packages/mobile-ui/android/build.gradle
-#    scandelete:
-#      - node_modules
-
     output: app/build/outputs/apk/master/release/app-master-release-unsigned.apk
 
 MaintainerNotes: |-
@@ -167,7 +162,3 @@ AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 1.3.3
 CurrentVersionCode: 102717
-
-# pefi's notz
-#     prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"4.4.1\" }' >>  ../build.gradle"
-#
