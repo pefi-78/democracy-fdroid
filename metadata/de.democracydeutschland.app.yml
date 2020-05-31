@@ -87,12 +87,10 @@ Builds:
     scandelete:
       - node_modules/
 
-
   - versionName: 1.3.3
     versionCode: 103675
     commit: a458b6f1af14b4d677fa438883c0aa9ba1759609
     subdir: packages/mobile-app/android/
-    patch: patch-1.3.3.patch
     sudo:
       - curl -Lo node.tar.xz https://nodejs.org/dist/v12.16.3/node-v12.16.3-linux-x64.tar.xz
       - echo "1956e196e3c3c8ef5f0c45db76d7c1245af4ccdda2b7ab30a57ce91d6e165caa" node.tar.xz
@@ -100,8 +98,12 @@ Builds:
       - tar xJf node.tar.xz
       - cp -a node-v12.16.3-linux-x64/. /usr/local/
       - npm -g install yarn
-    init:
-      - yarn install
+    init: yarn install
+    patch:
+      - patch-1.3.3.patch
+    gradle:
+      - master
+    output: app/build/outputs/apk/master/release/app-master-release-unsigned.apk
     rm:
       - node_modules/react-native/ReactAndroid/src/main/third-party/java/buck-android-support/buck-android-support.jar
       - node_modules/react-native/template
@@ -116,20 +118,19 @@ Builds:
       - node_modules/react-native-sha256/.vscode/ipch/439fa8c14c5b3f1a/mmap_address.bin
       - node_modules/@sentry/cli/sentry-cli
       - node_modules/hermes-engine
-      
-    gradle:
-      - master
     prebuild:
-      - echo -e "GRAPHQL_URL=https://api.democracy-app.de/\nPHONE_NUMBER=+4917647040213\nGITHUB_URL=https://github.com/demokratie-live/democracy-client\nCONTACT_EMAIL=prototyping@democracy-deutschland.de" >> ../.env
-      - sed -i -e '/hasPermission/d' -e '/tokenFetchIntent/d' -e '/GcmInstance/d' ../../../node_modules/react-native-notifications/lib/android/app/src/main/java/com/wix/reactnativenotifications/RNNotificationsModule.java
+      - echo -e "GRAPHQL_URL=https://api.democracy-app.de/\nPHONE_NUMBER=+4917647040213\nGITHUB_URL=https://github.com/demokratie-live/democracy-client\nCONTACT_EMAIL=prototyping@democracy-deutschland.de"
+        >> ../.env
+      - sed -i -e '/hasPermission/d' -e '/tokenFetchIntent/d' -e '/GcmInstance/d'
+        ../../../node_modules/react-native-notifications/lib/android/app/src/main/java/com/wix/reactnativenotifications/RNNotificationsModule.java
       - sed -i -e '/play-services/d' ../../../node_modules/react-native-device-info/android/build.gradle
       - sed -i -e '/com.google.android.gms.iid.InstanceID.getInstance/d' ../../../node_modules/react-native-device-info/android/src/main/java/com/learnium/RNDeviceInfo/RNDeviceModule.java
-      - sed -i -e '/firebase/d' ../../../node_modules/react-native-notifications/lib/android/app/build.gradle ../../../packages/mobile-app/android/app/build.gradle
+      - sed -i -e '/firebase/d' ../../../node_modules/react-native-notifications/lib/android/app/build.gradle
+        ../../../packages/mobile-app/android/app/build.gradle
       - sed -i -e '/hasPermission/d' -e '/tokenFetchIntent/d' -e '/GcmInstance/d'
         ../../../node_modules/react-native-notifications/lib/android/app/src/main/java/com/wix/reactnativenotifications/RNNotificationsModule.java
       - sed -i -e '/com.google.gms.google-services/d' ../../../packages/mobile-app/android/app/build.gradle
       - truncate -s 0 ../../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
-
     scanignore:
       - node_modules/react-native-screens/android/build.gradle
       - node_modules/react-native-svg/android/build.gradle
@@ -147,7 +148,6 @@ Builds:
       - packages/mobile-app/node_modules/detox/android/detox/detox-publishing.gradle
       - packages/mobile-app/android/build.gradle
       - packages/mobile-ui/android/build.gradle
-    output: app/build/outputs/apk/master/release/app-master-release-unsigned.apk
 
 MaintainerNotes: |-
     sed is used to:
